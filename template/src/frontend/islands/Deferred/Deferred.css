@@ -1,0 +1,5 @@
+/* Scoped the same way Counter's sheet is: from the wrapper Laut stamps, so
+   nothing here can reach another island or leak into the sea. */
+[data-island="Deferred"] h2 {
+  margin-top: 0;
+}

@@ -1,0 +1,5 @@
+# LAUT-PKG-04
+preload = ["./src/preload.ts"]
+
+[test]
+preload = ["./src/preload.ts"]

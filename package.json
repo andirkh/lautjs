@@ -1,0 +1,67 @@
+{
+  "name": "lautjs",
+  "version": "0.6.7",
+  "description": "An islands meta-framework for Bun 1.4. Preact + signals, kinu UI, no build step.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "bun",
+    "preact",
+    "islands",
+    "ssr",
+    "meta-framework",
+    "no-build",
+    "kinu"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andirkh/lautjs.git"
+  },
+  "homepage": "https://github.com/andirkh/lautjs#readme",
+  "bugs": {
+    "url": "https://github.com/andirkh/lautjs/issues"
+  },
+  "engines": {
+    "bun": ">=1.4.0"
+  },
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client/index.ts",
+    "./i18n": "./src/i18n/index.ts",
+    "./package.json": "./package.json",
+    "./*": "./src/*"
+  },
+  "types": "./src/index.ts",
+  "files": [
+    "src",
+    "template",
+    "README.md",
+    "GUIDE.md"
+  ],
+  "scripts": {
+    "check": "tsc --noEmit",
+    "test": "bun test",
+    "verify": "bun run check && bun test",
+    "scaffold": "bun scripts/scaffold.ts",
+    "sync:create": "bun scripts/sync-create.ts",
+    "link": "bun scripts/link.ts",
+    "unlink": "bun scripts/unlink.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "peerDependencies": {
+    "@preact/signals": "^2.11.1",
+    "kinu": "^0.2.0",
+    "preact": "^10.29.8",
+    "preact-render-to-string": "^6.7.0"
+  },
+  "devDependencies": {
+    "@preact/signals": "^2.11.1",
+    "@types/bun": "^1.4.0",
+    "kinu": "^0.2.0",
+    "preact": "^10.29.8",
+    "preact-render-to-string": "^6.7.0",
+    "prettier": "^3.9.6",
+    "typescript": "^5.9.0"
+  }
+}

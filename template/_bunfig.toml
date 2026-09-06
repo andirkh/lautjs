@@ -1,0 +1,7 @@
+# Laut needs one thing from Bun before anything else loads: the `.css` loader
+# that makes `import "./Foo.css"` work on the server. A plugin registered from
+# an ordinary import lands too late -- the module graph it should intercept is
+# already resolved -- so it has to be preloaded.
+#
+# Delete this line and every `import "./Foo.css"` becomes a runtime error.
+preload = ["lautjs/preload.ts"]

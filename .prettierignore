@@ -1,0 +1,10 @@
+# Prettier's own view of the repo. `bun run format` is meant to be a no-op on a
+# clean tree, so anything it should not rewrite belongs here.
+
+node_modules
+bun.lock
+*.tgz
+
+# Vendored from template/ by scripts/sync-create.ts -- format the original, not
+# the copy, or the next sync throws the changes away.
+create/template

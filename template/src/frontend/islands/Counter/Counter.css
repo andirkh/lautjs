@@ -1,0 +1,12 @@
+/* Co-located with the component, which imports it by name.
+   Scoped by convention, not by a compiler: every selector starts at the
+   wrapper Laut already stamps, so nothing here can reach another island or
+   leak into the sea. */
+[data-island="Counter"] .row {
+  gap: 10px;
+}
+
+/* the running value -- digits shouldn't shift width as it counts */
+[data-island="Counter"] .muted {
+  font-variant-numeric: tabular-nums;
+}
